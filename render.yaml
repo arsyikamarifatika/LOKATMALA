@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: lokatmala-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn lokatmala:app
+    autoDeploy: true
